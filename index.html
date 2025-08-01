@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PHP Roadmap - A beginner's guide to mastering PHP programming language with essential skills and practices." />
+
+    <title>PHP Roadmap</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <h1>PHP Roadmap</h1>
+        <p>A beginner's guide to mastering PHP programming language with essential skills and practices.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>🧠 Entry-Level PHP Programmer Checklist</h2>
+            <p>This checklist outlines the essential skills and concepts for becoming an entry-level PHP developer. Each item includes a brief explanation to help you understand its purpose and importance.</p>
+
+            <h3>✅ Core PHP Fundamentals</h3>
+            <ul>
+                <li><input type="checkbox" /> PHP syntax and data types – Learn how PHP code is written and the types of data it handles (e.g., strings, integers, arrays).</li>
+                <li><input type="checkbox" /> Operators – Use arithmetic, comparison, and logical operators (`+`, `==`, `&&`) to manipulate and evaluate data.</li>
+                <li><input type="checkbox" /> Conditional statements – Control the flow of your program using `if`, `else`, and `switch`.</li>
+                <li><input type="checkbox" /> Loops – Repeat actions using `for`, `while`, and `foreach`, especially useful for working with arrays.</li>
+                <li><input type="checkbox" /> Functions – Create reusable blocks of code to simplify and organize your logic.</li>
+                <li><input type="checkbox" /> Variable scope – Understand where variables can be accessed (local vs global).</li>
+                <li><input type="checkbox" /> Built-in functions – Use PHP’s built-in tools like `strlen()`, `array_push()`, and more.</li>
+                <li><input type="checkbox" /> Error handling – Use `try`, `catch`, and `finally` to manage exceptions and prevent crashes.</li>
+                <li><input type="checkbox" /> Debugging – Use `var_dump()`, `print_r()`, and error logs to troubleshoot issues.</li>
+            </ul>
+
+            <!-- Additional sections would follow in a similar format -->
+        </section>
+        <section>
+            <h3>PHP Syntax Basics</h3>
+            <ul>
+            <li><strong>PHP Tags:</strong> PHP code is enclosed within <code>&lt;?php ... ?&gt;</code> tags.</li>
+            <li><strong>Statements:</strong> Each statement ends with a semicolon (<code>;</code>).</li>
+            <li><strong>Variables:</strong> Variables start with a dollar sign (<code>$</code>) followed by the variable name (e.g., <code>$myVar</code>).</li>
+            <li><strong>Case Sensitivity:</strong> Variable names are case-sensitive; function names are not.</li>
+            <li><strong>Strings:</strong> Strings can be enclosed in single quotes (<code>'Hello'</code>) or double quotes (<code>"Hello"</code>).</li>
+            <li><strong>Arrays:</strong> Arrays can be created using the <code>array()</code> function or the shorthand syntax (<code>[]</code>).</li>
+            <li><strong>Comments:</strong> Use <code>//</code> for single-line and <code>/* ... */</code> for multi-line comments.</li>
+            <li><strong>Whitespace:</strong> PHP ignores extra whitespace, making code more readable.</li>
+            <li><strong>Output:</strong> Use <code>echo</code> or <code>print</code> to display output to the browser.</li>
+            <li><strong>Control Structures:</strong> Use <code>if</code>, <code>else</code>, <code>elseif</code>, <code>switch</code>, <code>for</code>, <code>while</code>, and <code>foreach</code> to control the flow of your program.</li>
+            <li><strong>Loops:</strong> Repeat actions using <code>for</code>, <code>while</code>, and <code>foreach</code> loops to process data and automate repetitive tasks.</li>
+            <li><strong>Functions:</strong> Define reusable blocks of code using the <code>function</code> keyword. Functions can accept parameters and return values. Example: <code>function greet($name) { echo "Hello, $name!"; }</code></li>
+            <li><strong>Echo/Print:</strong> Use <code>echo</code> or <code>print</code> to output data.</li>
+            </ul>
+        </section>
+        <section>  
+            <h3>PHP Data Types</h3>
+            <table>
+            <thead>
+                <tr>
+                <th>Type</th>
+                <th>Description</th>
+                <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>String</td>
+                <td>Sequence of characters</td>
+                <td><code>"Hello, World!"</code></td>
+                </tr>
+                <tr>
+                <td>Integer</td>
+                <td>Whole numbers</td>
+                <td><code>42</code></td>
+                </tr>
+                <tr>
+                <td>Float</td>
+                <td>Numbers with decimals</td>
+                <td><code>3.14</code></td>
+                </tr>
+                <tr>
+                <td>Boolean</td>
+                <td>True or false values</td>
+                <td><code>true</code>, <code>false</code></td>
+                </tr>
+                <tr>
+                <td>Array</td>
+                <td>Collection of values</td>
+                <td><code>["apple", "banana", "cherry"]</code></td>
+                </tr>
+                <tr>
+                <td>Object</td>
+                <td>Instance of a class containing properties and methods</td>
+                <td><code>new MyClass()</code></td>
+                </tr>
+                <tr>
+                <td>NULL</td>
+                <td>Special type representing a variable with no value</td>
+                <td><code>null</code></td>
+                </tr>
+                <tr>
+                <td>Resource</td>
+                <td>Reference to an external resource (e.g., database connection, file handle)</td>
+                <td><code>fopen("file.txt", "r")</code></td>
+                </tr>
+            </tbody>    
+            </table>
+        </section>
+        <section>
+            <h3>PHP Variables</h3>
+            <ul>
+                <li><strong>Variable Declaration:</strong> Use the `$` symbol followed by the variable name (e.g., `$myVar`).</li>
+                <li><strong>Variable Assignment:</strong> Assign values using the `=` operator (e.g., `$myVar = "Hello";`).</li>
+                <li><strong>Variable Scope:</strong> Understand local and global variables, and how to access them.</li>
+                <li><strong>Variable Types:</strong> PHP is a loosely typed language, meaning variables can change types dynamically.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>PHP Operators</h3>
+            <ul>
+                <li><strong>Arithmetic Operators:</strong> `+`, `-`, `*`, `/`, `%` (modulus)</li>
+                <li><strong>Comparison Operators:</strong> `==`, `===`, `!=`, `!==`, `<`, `>`, `<=`, `>=`</li>
+                <li><strong>Logical Operators:</strong> `&&` (and), `||` (or), `!` (not)</li>
+                <li><strong>Assignment Operators:</strong> `=`, `+=`, `-=`, `*=`, `/=`, `%=`</li>
+                <li><strong>Increment/Decrement Operators:</strong> `++`, `--`</li>
+            </ul>
+        </section>
+        <section>
+            <h3>PHP Conditional Statements</h3>
+            <ul>
+                <li><strong>If statement:</strong> Executes code if a condition is true.</li>
+                <li><strong>Else statement:</strong> Executes code if the condition in the `if` statement is false.</li>
+                <li><strong>Elseif statement:</strong> Checks multiple conditions in sequence.</li>
+                <li><strong>Switch statement:</strong> Selects one of many blocks of code to execute based on a variable's value.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>PHP Loops</h3>
+            <ul>
+                <li><strong>For Loop:</strong> Repeats a block of code a specified number of times.</li>
+                <li><strong>While Loop:</strong> Repeats a block of code as long as a condition is true.</li>
+                <li><strong>Do-While Loop:</strong> Similar to the while loop, but guarantees at least one execution.</li>
+                <li><strong>Foreach Loop:</strong> Iterates over elements in an array or object.</li>
+            </ul>
+        <section>
+            <h3>PHP Functions</h3>
+            <ul>
+                <li><strong>Function Definition:</strong> Use the `function` keyword to create a reusable block of code.</li>
+                <li><strong>Parameters:</strong> Pass values to functions using parameters.</li>
+                <li><strong>Return Values:</strong> Use the `return` statement to send a value back from a function.</li>
+                <li><strong>Variable Scope:</strong> Understand local and global variables within functions.</li>
+                <li><strong>Built-in Functions:</strong> Utilize PHP's extensive library of built-in functions for common tasks.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Variable Scope</h3>
+            <ul>
+                <li><strong>Global Scope:</strong> Variables declared outside functions are accessible globally.</li>
+                <li><strong>Local Scope:</strong> Variables declared within a function are only accessible within that function.</li>
+                <li><strong>Static Variables:</strong> Use the `static` keyword to retain a variable's value between function calls.</li>
+                <li><strong>Global Keyword:</strong> Use the `global` keyword to access global variables inside a function.</li>    
+        </section>
+         <section>
+            <h3>PHP Superglobals</h3>
+            <ul>
+                <li><strong>$_GET:</strong> Access query string parameters from the URL.</li>
+                <li><strong>$_POST:</strong> Access form data submitted via HTTP POST method.</li>
+                <li><strong>$_SESSION:</strong> Store user session data across multiple pages.</li>
+                <li><strong>$_COOKIE:</strong> Access cookies stored in the user's browser.</li>
+                <li><strong>$_FILES:</strong> Handle file uploads from forms.</li>
+                <li><strong>$_SERVER:</strong> Access server and execution environment information.</li>
+            </ul>   
+        </section>
+        <section>
+            <h3>PHP Arrays</h3>
+            <ul>
+                <li><strong>Indexed Arrays:</strong> Arrays with numeric keys.</li>
+                <li><strong>Associative Arrays:</strong> Arrays with named keys (e.g., `["name" => "John", "age" => 30]`).</li>
+                <li><strong>Multidimensional Arrays:</strong> Arrays containing other arrays (e.g., `[[1, 2], [3, 4]]`).</li>
+                <li><strong>Array Functions:</strong> Use functions like `array_push()`, `array_pop()`, and `count()` to manipulate arrays.</li>
+            </ul>   
+        </section>
+        <section>
+            <h3>Built-In Functions</h3>
+            <ul>
+                <li><strong>String Functions:</strong> Use functions like `strlen()`, `strpos()`, and `str_replace()` to manipulate strings.</li>
+                <li><strong>Array Functions:</strong> Use functions like `array_merge()`, `array_slice()`, and `in_array()` to work with arrays.</li>
+                <li><strong>Date and Time Functions:</strong> Use functions like `date()`, `strtotime()`, and `time()` to handle dates and times.</li>
+                <li><strong>Mathematical Functions:</strong> Use functions like `abs()`, `round()`, and `rand()` for mathematical operations.</li>
+        </section>
+       
+        <section>
+            <h3>PHP Error Handling</h3>
+            <ul>
+                <li><strong>Error Reporting:</strong> Use `error_reporting()` to control which errors are reported.</li>
+                <li><strong>Custom Error Handlers:</strong> Create custom functions to handle errors using `set_error_handler()`.</li>
+                <li><strong>Exception Handling:</strong> Use `try`, `catch`, and `finally` blocks to manage exceptions and prevent application crashes.</li>
+                <li><strong>Logging Errors:</strong> Use `error_log()` to log errors to a file or send them to a remote server.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>PHP Security Best Practices</h3>
+            <ul>
+                <li><strong>Input Validation:</strong> Validate and sanitize user input to prevent SQL injection and XSS attacks.</li>
+                <li><strong>Prepared Statements:</strong> Use prepared statements with PDO or MySQLi to safely execute SQL queries.</li>
+                <li><strong>Password Hashing:</strong> Use `password_hash()` and `password_verify()` for secure password storage.</li>
+                <li><strong>HTTPS:</strong> Use HTTPS to encrypt data transmitted between the client and server.</li>
+                <li><strong>Error Handling:</strong> Avoid displaying detailed error messages to users; log them instead.</li>
+            </ul>
+        </section>
+        <section>
+            <h3>PHP Best Practices</h3>
+            <ul>
+                <li><strong>Code Readability:</strong> Write clean, well-commented code to improve maintainability.</li>
+                <li><strong>Consistent Naming Conventions:</strong> Use meaningful variable and function names, and follow a consistent naming style (e.g., camelCase).</li>
+                <li><strong>Version Control:</strong> Use Git or another version control system to track changes and collaborate with others.</li>
+                <li><strong>Testing:</strong> Write unit tests to ensure your code works as expected.</li>
+                <li><strong>Documentation:</strong> Document your code and APIs for better understanding and usage.</li>
+            </ul>
+        </section>
+        
+        
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PHP Roadmap. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
